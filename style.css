@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 189, 190);
+}
+
+.profile-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    background-color: white;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+}
+
+
+
+.image{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(42, 126, 195);
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 20px;    
+    position: relative;
+
+}
+
+.image .profile-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile-card .social{
+    display: flex;
+    align-items: center;
+}
+
+.social .social-icon{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.profile-card .b{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.b .button{
+    background-color: rgb(42, 126, 195);
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    border-radius: 20px;
+    border:0;
+    font-size : 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.b .button:hover{
+    background-color: rgb(120, 168, 207);
+}
+
+.profile-card .analytics{
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.analytics .data{
+    font-size: 15px;
+    padding: 0 20px;
+    border-right: 1px solid grey;
+}
+
+.data:last-child{
+    border-right: none;
+}
+
+.data i{
+    margin-right: 5px;
+}
+
+.profile-card::before{
+    content:'';
+    position: absolute;
+    background-color: rgb(42, 126, 195);
+    width: 100%;
+    height: 30%;
+    top:0;
+    left:0;
+    border-radius: 24px 24px 0 0;
+}
